@@ -1,7 +1,22 @@
 body {
     background-color: #083b4c;
 }
+/* classi personalizzate rispetto a bootstrap */
+.my_container {
+    margin: 0 auto;
+}
 
+.my_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my_col {
+    flex: 0 0 calc(100% / 3);
+    padding: 1rem;
+}
+
+/* personalizzazione celle */
 .cell {
     display: flex;
     justify-content: center;
@@ -22,4 +37,52 @@ background-color: #1389b2;
 
 .cell_bg_red {
     background: #f0466f;
+}
+
+/* mediaqueries */
+
+/* *****SM***** */
+@media screen and (min-width : 576px) {
+    .my_container {
+        width: 540px;
+    }
+
+    .my_col {
+        flex: 0 0 calc(100% / 4);
+        padding: 1.2rem;
+    }
+}
+
+/* *****MD***** */
+@media screen and (min-width : 768px) {
+    .my_container {
+        width: 740px;
+    }
+
+    .my_col {
+        flex: 0 0 calc(100% / 5);
+        padding: 1.5rem;
+    }
+}
+
+/* *****LG***** */
+@media screen and (min-width : 992px) {
+    .my_container {
+        width: 970px;
+    }
+
+    .my_col {
+        flex: 0 0 calc(100% / 7);
+    }
+}
+
+/* *****XXL***** */
+@media screen and (min-width : 1400px) {
+    .my_container {
+        width: 1350px;
+    }
+
+    .my_col {
+        flex: 0 0 calc(100% / 9);
+    }
 }
