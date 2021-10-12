@@ -2,18 +2,24 @@ body {
     background-color: #083b4c;
 }
 
-.bg_cell_lightblue {
-    background-color: #1389b2;
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bg_cell_lightgreen {
+.cell_bg_lightblue {
+background-color: #1389b2;
+}
+
+.cell_bg_lightgreen {
     background-color: #0bd6a1;
 }
 
-.bg_cell_yellow {
+.cell_bg_yellow {
     background-color: #ffdd16;
 }
 
-.bg_cell_red {
-    background-color: #f0466f;
+.cell_bg_red {
+    background: #f0466f;
 }
